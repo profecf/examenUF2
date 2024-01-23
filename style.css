@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar scroll horizontal */
+    background: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    color: #000000;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #8dc63f;
+}
+
+p, ol, ul {
+    margin-top: 0;
+}
+
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    line-height: 180%;
+}
+
+strong {
+    color: #8dc63f;
+}
+
+a {
+    color: #8dc63f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    overflow: hidden;
+    margin: 0em auto;
+    max-width: 1200px; /* Cambiado a max-width para ser responsive */
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner {
+    overflow: hidden;
+    padding: 15em 0em;
+    background: url(img/banner.jpg) no-repeat center;
+    background-size: cover;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+/*********************************************************************************/
+/* Requisitos Actividad                                                          */
+/*********************************************************************************/
+
+/* Requisito 1: Animar el coche (cotxe.webp) */
+#banner img {
+    position: absolute;
+    bottom: 0;
+    right: -200px; /* Cambiado de right a left */
+    animation: moveCar 8s linear infinite; /* Cambiado a 8s según los requisitos */
+    width: auto;
+}
+
+@keyframes moveCar {
+    0% {
+        right: -200px;
+    }
+    25% {
+        right: 25%;
+    }
+    50% {
+        right: 50%;
+    }
+    75% {
+        right: 75%;
+    }
+    100% {
+        right: 100%;
+    }
+}

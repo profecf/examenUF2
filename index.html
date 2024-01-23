@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,23 @@
     <title>Examen UF2</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
+
 <body>
     <h1>Examen UF2</h1>
     <h2>Exercici 1</h2>
     <div id="ex1">Implementeu aquí l'exercici 1</div>
+    <div id="banner"><img id="imgCotxe" src="img/car.gif"></div>
     <h2>Exercici 2</h2>
     <div id="ex2">Implementeu aquí l'exercici 2</div>
+    <img src="originals/pallasso.svg" alt="Logo de SVG">
+    <audio src="audio/riure.mp3" style="visibility: hidden;"></audio>
+    <p>Audio tret de l'usuari profecf de github</p>
+
+    <script>
+        window.onload = function() {
+            document.querySelector("audio").play();
+        }
+    </script>
 </body>
+
 </html>

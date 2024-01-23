@@ -1,10 +1,58 @@
-html, body {
-    height: 100%;
-    max-width: 1200px;
-    margin: 2% auto;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  max-width: 1200px;
+  margin: 2% auto;
+  padding: 0;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
+}
+
+.image {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.image-full {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+#banner {
+  height: 500px;
+  overflow: hidden;
+  padding: 1em 0em;
+  background: url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#imgCotxe {
+  animation: 8s ease-in 2s infinite reverse both running movimentCotxe;
+}
+
+@keyframes movimentCotxe {
+  0% {
+    transform: translate(-50vh, 400px);
+  }
+  25% {
+    transform: translate(200vh, 450px);
+  }
+  50% {
+    transform: translate(-50vh, 400px);
+  }
+  75% {
+    transform: translate(200vh, 450px);
+  }
+  100% {
+    transform: translate(200vh, 450px);
+  }
 }

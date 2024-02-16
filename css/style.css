@@ -12,6 +12,7 @@ h1 {
 #ex1 {
     /* per colocar el cotxe fem que el contenidor tingui posició relativa */
     position: relative;
+    overflow: hidden;
 }
 
 #ex1 img.fons {
@@ -26,4 +27,14 @@ h1 {
     /* ajustar posició vertical per colocar-lo sobre l'asfalt */
     bottom: 3%;
     right: 0;
+    animation: marxa-cotxe 8s infinite linear;
+}
+
+@keyframes marxa-cotxe {
+    0% {
+        right: -25%;
+    }
+    50%, 100% {
+        right: 125%;
+    }
 }

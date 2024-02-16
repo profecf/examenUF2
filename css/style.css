@@ -9,6 +9,21 @@ h1 {
     font-size: 2em;
 }
 
-#ex1 img {
+#ex1 {
+    /* per colocar el cotxe fem que el contenidor tingui posició relativa */
+    position: relative;
+}
+
+#ex1 img.fons {
     width: 100%;
+}
+
+#ex1 img.cotxe {
+    /* per colocar el cotxe necessitem posició absoluta */
+    position: absolute;
+    /* tamany percentual, si volem que la mida es reajusti en redimensionar la finestra */
+    width: 22%; 
+    /* ajustar posició vertical per colocar-lo sobre l'asfalt */
+    bottom: 3%;
+    right: 0;
 }
